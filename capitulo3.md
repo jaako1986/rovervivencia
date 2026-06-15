@@ -127,8 +127,7 @@ Por último, el equipamiento debe ser proporcional a la actividad. Una salida de
 La experiencia demuestra que los mejores equipos rara vez son los más grandes. Suelen ser aquellos en los que cada elemento tiene una función clara y ha demostrado su utilidad en situaciones reales.
 
 Cada objeto debe justificar su peso.
-
-[Imagen: <img width="1254" height="1254" alt="que no llevar" src="https://github.com/user-attachments/assets/cc0fe99e-ccd5-4dbc-8c71-a88cd32e0b0b" />
+ <img width="1254" height="1254" alt="que no llevar" src="https://github.com/user-attachments/assets/cc0fe99e-ccd5-4dbc-8c71-a88cd32e0b0b" />
 
 ---
 
