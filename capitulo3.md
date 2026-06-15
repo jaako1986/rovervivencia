@@ -10,50 +10,78 @@ El objetivo de este capítulo es ayudar a seleccionar, organizar y utilizar el e
 
 ---
 
-## Mochila
+La mochila
 
-* Selección de mochila.
-* Distribución del peso.
-* Acceso rápido a elementos importantes.
-* Protección contra lluvia y humedad.
-* Organización interna.
+La mochila es mucho más que un contenedor para transportar equipo. Es el sistema que nos permite llevar todo lo necesario de manera ordenada, cómoda y segura durante una actividad. Una mochila bien elegida y correctamente cargada reduce el cansancio, mejora la movilidad y permite acceder rápidamente a los elementos que podemos necesitar en una emergencia.
 
-[Imagen: distribución recomendada de carga]
+Al momento de elegir una mochila, no existe un modelo perfecto para todas las situaciones. Una salida de unas pocas horas requiere menos capacidad que un campamento de varios días, por lo que resulta importante seleccionar un tamaño acorde a la actividad prevista. Más importante aún es que la mochila se adapte correctamente a quien la utiliza, distribuyendo el peso entre hombros, espalda y cintura de manera equilibrada.
 
----
+La forma en que se organiza el contenido también influye directamente en la comodidad durante la marcha. Los elementos más pesados, como el agua o la comida, suelen ubicarse cerca de la espalda y aproximadamente a la altura de los hombros para mantener el centro de gravedad estable. Los objetos livianos pueden colocarse en la parte inferior, mientras que aquellos de uso frecuente, como un abrigo, una linterna o un botiquín, deberían encontrarse en sectores de acceso rápido.
 
-## Vestimenta por capas
+La protección contra la humedad merece una atención especial. En Patagonia, una jornada soleada puede transformarse rápidamente en lluvia o nieve, por lo que conviene utilizar fundas impermeables y proteger los elementos sensibles dentro de bolsas estancas o bolsas resistentes. Una mochila mojada resulta incómoda; una bolsa de dormir mojada puede convertirse en un problema serio.
 
-### Primera capa
-
-* Control de humedad.
-
-### Segunda capa
-
-* Conservación del calor.
-
-### Tercera capa
-
-* Protección contra viento y lluvia.
-
-[Imagen: sistema de capas]
+<img width="1402" height="1122" alt="distribución recomendada de carga" src="https://github.com/user-attachments/assets/4f224cc6-6d27-4c85-a2ce-9ea449c69504" />
 
 ---
 
-## Las 10 herramientas esenciales
+Vestimenta por capas
 
-1. Elemento de corte.
-2. Encendedor o medio de ignición.
-3. Linterna.
-4. Recipiente para agua.
-5. Cuerda o cordín.
-6. Elemento de orientación.
-7. Botiquín básico.
-8. Protección contra el clima.
-9. Silbato.
-10. Medio de comunicación.
+Mantener una temperatura corporal adecuada es mucho más importante que simplemente mantenerse abrigado. Durante una actividad al aire libre el cuerpo produce calor constantemente y, al mismo tiempo, pierde energía a través del viento, la lluvia y la evaporación del sudor. El sistema de vestimenta por capas busca gestionar estos procesos de forma eficiente para conservar el confort y evitar tanto el enfriamiento como el exceso de calor.
 
-[Imagen: equipo esencial Rover]
+La primera capa se encuentra en contacto directo con la piel y tiene la función de controlar la humedad. Su objetivo es transportar el sudor hacia el exterior para que pueda evaporarse sin permanecer sobre el cuerpo. Por esta razón suelen recomendarse materiales sintéticos o lana merino, mientras que el algodón suele desaconsejarse debido a que absorbe gran cantidad de agua y tarda mucho tiempo en secarse.
+
+Sobre ella se encuentra la segunda capa, encargada de conservar el calor generado por el propio organismo. Prendas como los micropolares, los buzos de polar o determinadas camperas livianas cumplen esta función creando una barrera de aire que actúa como aislante térmico.
+
+Finalmente aparece la tercera capa, cuya misión es proteger del viento, la lluvia y otras condiciones ambientales adversas. En la Patagonia esta capa adquiere una importancia especial, ya que incluso en días soleados el viento puede aumentar significativamente la sensación de frío. Un buen rompevientos o una campera impermeable suelen marcar una diferencia mucho mayor de lo que muchos principiantes imaginan.
+<img width="1254" height="1254" alt="sistema de capas" src="https://github.com/user-attachments/assets/6457eb31-c054-4bd0-9994-ba2f23cfdbec" />
+
+---
+
+Las 10 herramientas esenciales
+
+Existen muchas formas de armar un equipo personal, pero ciertos elementos aparecen una y otra vez porque permiten resolver la mayoría de los problemas habituales en actividades al aire libre. No siempre serán exactamente los mismos modelos o marcas, pero sí cumplen funciones que conviene tener cubiertas.
+
+1. Elemento de corte
+
+Un cuchillo o navaja permite realizar tareas tan diversas como preparar alimentos, cortar cuerdas, fabricar estacas o efectuar pequeñas reparaciones. Debe mantenerse limpio, afilado y utilizarse siempre de manera responsable.
+
+2. Medio de ignición
+
+El fuego proporciona calor, iluminación, la posibilidad de cocinar alimentos y, en algunos casos, una herramienta de señalización. Un encendedor suele ser la opción más práctica, aunque siempre es recomendable contar con un método de respaldo.
+
+3. Linterna
+
+La iluminación artificial resulta indispensable cuando cae la noche o se debe trabajar en espacios oscuros. Las linternas frontales ofrecen la ventaja de dejar las manos libres para realizar otras tareas.
+
+4. Recipiente para agua
+
+Mantener una adecuada hidratación es fundamental para el rendimiento físico y mental. Botellas, cantimploras o recipientes reutilizables permiten transportar agua de forma segura durante toda la actividad.
+
+5. Cuerda o cordín
+
+Un pequeño tramo de cordín ocupa poco espacio y puede utilizarse para reparaciones, montaje de refugios, tensado de lonas, organización de equipo o múltiples soluciones improvisadas.
+
+6. Elemento de orientación
+
+La capacidad de saber dónde estamos y hacia dónde nos dirigimos es una habilidad fundamental. Un mapa y una brújula continúan siendo herramientas confiables, incluso cuando la tecnología deja de funcionar.
+
+7. Botiquín básico
+
+Todo participante debería contar con elementos mínimos para atender lesiones menores y actuar ante las situaciones más frecuentes hasta recibir ayuda adecuada.
+
+8. Protección contra el clima
+
+El clima puede cambiar rápidamente, especialmente en Patagonia. Un rompevientos, una capa impermeable o un refugio ligero pueden marcar una diferencia importante en la comodidad y la seguridad.
+
+9. Silbato
+
+Permite emitir señales audibles a gran distancia utilizando menos energía que la voz. Resulta especialmente útil en situaciones de emergencia o cuando la visibilidad es reducida.
+
+10. Medio de comunicación
+
+La posibilidad de solicitar ayuda o transmitir información puede ser crucial. Dependiendo de la actividad, puede tratarse de un teléfono móvil, una radio o cualquier otro sistema disponible.
+
+<img width="1254" height="1254" alt="herramientas esenciales" src="https://github.com/user-attachments/assets/9b468dfd-2c7f-44d0-a87b-ad0410b15f94" />
 
 ---
 
