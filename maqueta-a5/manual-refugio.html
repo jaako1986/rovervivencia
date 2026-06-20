@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rovervivencia - Refugio y campamento A5</title>
+  <style>
+    @page { size: A5 portrait; margin: 12mm 10mm 14mm; }
+    :root { --ink:#1f2a24; --muted:#65706a; --line:#c9d2ca; --paper:#fffdf8; --panel:#f4f0e6; --accent:#2f6f4e; --accent-dark:#214b37; --warning:#8a4b22; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:var(--paper); color:var(--ink); font-family: Georgia, "Times New Roman", serif; font-size:10.5pt; line-height:1.48; }
+    .book { max-width:148mm; margin:0 auto; background:var(--paper); }
+    .cover, .chapter, .sheet { min-height:184mm; page-break-after:always; }
+    .cover { display:flex; flex-direction:column; justify-content:center; border-bottom:1px solid var(--line); }
+    .kicker { color:var(--accent); font-family:Arial, sans-serif; font-size:8pt; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1, h2, h3 { color:var(--accent-dark); font-family:Arial, sans-serif; line-height:1.12; page-break-after:avoid; }
+    h1 { margin:0 0 7mm; font-size:27pt; }
+    h2 { margin:9mm 0 4mm; font-size:16pt; border-bottom:1px solid var(--line); padding-bottom:2mm; }
+    h3 { margin:0 0 2mm; font-size:12pt; }
+    p { margin:0 0 3.2mm; }
+    ul { margin:0 0 4mm 5mm; padding:0; }
+    li { margin-bottom:1.5mm; }
+    .lede { color:#33443a; font-size:11.5pt; line-height:1.5; border-left:3px solid var(--accent); padding-left:4mm; margin:0 0 7mm; }
+    .note, .warning { margin:5mm 0; padding:4mm; background:var(--panel); border-left:3px solid var(--accent); font-family:Arial, sans-serif; font-size:9.2pt; }
+    .warning { border-left-color:var(--warning); }
+    .decision-grid { display:grid; grid-template-columns:1fr; gap:2mm; font-family:Arial, sans-serif; font-size:9pt; }
+    .decision-grid div { padding:2.3mm; background:#fff; border-left:2px solid var(--accent); }
+    .sheet { display:flex; flex-direction:column; justify-content:flex-start; }
+    .sheet-head { margin-bottom:3mm; }
+    .sheet-title { margin:0; font-size:14pt; }
+    .sheet-subtitle { color:var(--muted); font-family:Arial, sans-serif; font-size:8.6pt; margin-top:1mm; }
+    .sheet img { display:block; width:100%; max-height:156mm; object-fit:contain; margin:auto 0; border:1px solid #d8ded7; background:white; }
+    .sheet-foot { color:var(--muted); font-family:Arial, sans-serif; font-size:8pt; margin-top:3mm; border-top:1px solid var(--line); padding-top:2mm; }
+    .footer-note { color:var(--muted); font-family:Arial, sans-serif; font-size:8pt; margin-top:8mm; }
+    @media screen { body { background:#d9ddd7; padding:18px; } .book { padding:12mm 10mm 14mm; box-shadow:0 8px 32px rgba(0,0,0,.18); } .cover, .chapter, .sheet { border-bottom:1px dashed #b9c1ba; margin-bottom:14mm; padding-bottom:8mm; } }
+    @media print { .book { max-width:none; padding:0; box-shadow:none; } a { color:inherit; text-decoration:none; } }
+  </style>
+</head>
+<body>
+  <main class="book">
+    <section class="cover">
+      <p class="kicker">Manual scout de supervivencia</p>
+      <h1>Refugio y campamento</h1>
+      <p class="lede">En Patagonia, un buen refugio no empieza con una lona: empieza con elegir bien el lugar y leer el viento.</p>
+      <p class="footer-note">Maqueta A5 de prueba. Capitulo 6 + fichas de tarp.</p>
+    </section>
+
+    <section class="chapter">
+      <p class="kicker">Capitulo 6</p>
+      <h1>Refugio como prioridad</h1>
+      <p class="lede">Cuando el clima empeora, el refugio suele ser mas importante que el fuego. Protege del viento, la lluvia, el frio y la exposicion prolongada.</p>
+
+      <h2>Antes de armar</h2>
+      <ul>
+        <li>Buscar terreno firme, relativamente plano y con buen drenaje.</li>
+        <li>Evitar cauces secos, zonas inundables, fondos de cañadon y sectores inestables.</li>
+        <li>Observar la direccion del viento antes de instalar la carpa o el tarp.</li>
+        <li>Aprovechar reparos naturales sin quedar debajo de ramas o estructuras riesgosas.</li>
+      </ul>
+
+      <h2>Regla de refugio</h2>
+      <p>El mejor refugio no siempre es el mas complejo. Es el que se instala rapido, queda bien tensado, es adecuado al viento y permite que el agua escurra.</p>
+
+      <div class="warning"><strong>Patagonia:</strong> una ubicacion protegida puede valer mas que una carpa cara. El viento decide muchas veces que configuracion conviene.</div>
+    </section>
+
+    <section class="chapter">
+      <p class="kicker">Guia de eleccion</p>
+      <h1>Que tarp usar</h1>
+      <p class="lede">Las fichas siguientes deben leerse como un atlas de decisiones. Cada configuracion resuelve un problema distinto.</p>
+      <div class="decision-grid">
+        <div><strong>Lean-To:</strong> pausa rapida, cocina o reparo simple con buena visibilidad.</div>
+        <div><strong>A-Frame:</strong> opcion general para dormir, lluvia y actividades scout habituales.</div>
+        <div><strong>Diamante:</strong> vivac individual, rapidez y buena respuesta al viento.</div>
+        <div><strong>Low Profile:</strong> maxima prioridad al viento y lluvia horizontal.</div>
+        <div><strong>Wing / Comedor:</strong> cobertura amplia para grupo, cocina o area comun.</div>
+      </div>
+      <div class="note"><strong>Decision de maqueta:</strong> las imagenes de tarp contienen explicacion propia. Por eso se presentan como laminas A5 completas, con una nota de uso debajo.</div>
+    </section>
+
+    <section class="sheet">
+      <div class="sheet-head">
+        <p class="kicker">Ficha 6.1</p>
+        <h2 class="sheet-title">Comparativa de tarps</h2>
+        <p class="sheet-subtitle">Usar antes de elegir configuracion.</p>
+      </div>
+      <img alt="Comparativa de tarps" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/comparativa%20tarps.png">
+      <p class="sheet-foot">Lectura Rover: primero se define el problema: viento, lluvia, grupo, descanso o emergencia.</p>
+    </section>
+
+    <section class="sheet">
+      <div class="sheet-head">
+        <p class="kicker">Ficha tecnica 1</p>
+        <h2 class="sheet-title">Lean-To</h2>
+        <p class="sheet-subtitle">Reparo inclinado para pausas, cocina o lluvia suave.</p>
+      </div>
+      <img alt="Lean-To" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/leanto.png">
+      <p class="sheet-foot">Lectura Rover: rapido y abierto, pero limitado si el viento cambia.</p>
+    </section>
+
+    <section class="sheet">
+      <div class="sheet-head">
+        <p class="kicker">Ficha tecnica 2</p>
+        <h2 class="sheet-title">A-Frame</h2>
+        <p class="sheet-subtitle">La configuracion base que la mayoria deberia dominar.</p>
+      </div>
+      <img alt="A-Frame" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/A%20frame.png">
+      <p class="sheet-foot">Lectura Rover: buen equilibrio entre proteccion, simplicidad y comodidad.</p>
+    </section>
+
+    <section class="sheet">
+      <div class="sheet-head">
+        <p class="kicker">Ficha tecnica 3</p>
+        <h2 class="sheet-title">Diamante / Plow Point</h2>
+        <p class="sheet-subtitle">Vivac individual, montaje rapido y buena respuesta al viento.</p>
+      </div>
+      <img alt="Diamante" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/diamante.png">
+      <p class="sheet-foot">Lectura Rover: util cuando se prioriza bajo peso, rapidez y proteccion individual.</p>
+    </section>
+
+    <section class="sheet">
+      <div class="sheet-head">
+        <p class="kicker">Ficha tecnica 4</p>
+        <h2 class="sheet-title">Low Profile</h2>
+        <p class="sheet-subtitle">Perfil bajo para viento fuerte o condiciones exigentes.</p>
+      </div>
+      <img alt="Low Profile" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/low%20profile.png">
+      <p class="sheet-foot">Lectura Rover: menos comodidad, mas estabilidad. En viento serio, esa es la prioridad.</p>
+    </section>
+
+    <section class="sheet">
+      <div class="sheet-head">
+        <p class="kicker">Ficha tecnica 5</p>
+        <h2 class="sheet-title">Wing / Comedor</h2>
+        <p class="sheet-subtitle">Cobertura amplia para grupo, cocina o zona de trabajo.</p>
+      </div>
+      <img alt="Wing comedor" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/comedor.png">
+      <p class="sheet-foot">Lectura Rover: excelente para campamento base; bajar o desmontar si el viento aumenta.</p>
+    </section>
+  </main>
+</body>
+</html>
