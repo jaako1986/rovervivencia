@@ -7,8 +7,9 @@ Esta carpeta contiene una propuesta inicial para convertir Rovervivencia en un m
 - Formato final: A5 vertical.
 - Uso principal: manual impreso o PDF.
 - Texto breve por seccion, con lectura clara en campo.
-- Imagenes tratadas como fichas: cada imagen debe explicar, ordenar o reforzar una tecnica concreta.
-- Cada capitulo puede alternar paginas de desarrollo con fichas visuales.
+- Las imagenes que ya contienen texto se tratan como laminas A5 completas.
+- El texto del capitulo funciona como puente, criterio de uso y explicacion; no duplica toda la ficha.
+- Cada capitulo puede alternar paginas de desarrollo con fichas visuales a pagina completa.
 
 ## Estructura recomendada
 
@@ -26,14 +27,13 @@ Esta carpeta contiene una propuesta inicial para convertir Rovervivencia en un m
 
 Se usa para explicar criterios, riesgos, decisiones y conceptos generales.
 
-### Ficha visual
+### Lamina A5
 
-Se usa cuando hay una imagen importante. Debe tener:
+Se usa cuando una imagen ya funciona como ficha completa. Debe ocupar casi toda la pagina para que el texto interno sea legible.
 
-- Titulo corto.
-- Imagen grande.
-- 3 a 5 puntos clave.
-- Una nota Rover o advertencia practica.
+### Ficha visual nueva
+
+Se usa cuando la imagen es principalmente ilustrativa y el texto explicativo lo aporta el libro.
 
 ### Checklist
 
@@ -41,9 +41,15 @@ Se usa para preparar salidas, revisar equipo o evaluar una situacion.
 
 ## Archivos incluidos
 
-- `estilos-a5.css`: estilos de impresion A5.
-- `manual-capitulo3.html`: maqueta del capitulo 3 con texto e imagenes conectadas desde la rama `imagenes`.
+- `estilos-a5.css`: estilos base de impresion A5.
+- `manual-capitulo3.html`: maqueta del capitulo 3 con laminas A5 completas.
+- `manual-refugio.html`: maqueta del capitulo de refugio/campamento y fichas de tarp.
 
-## Como usarlo
+## Como visualizar
 
-Abrir `manual-capitulo3.html` en el navegador y usar imprimir/guardar como PDF. En la configuracion de impresion elegir papel A5, margenes predeterminados o ninguno si el navegador respeta el CSS de pagina.
+GitHub muestra los HTML como codigo. Para verlos renderizados, usar HTML Preview:
+
+- Capitulo 3: https://htmlpreview.github.io/?https://github.com/jaako1986/rovervivencia/blob/maqueta-a5/maqueta-a5/manual-capitulo3.html
+- Refugio: https://htmlpreview.github.io/?https://github.com/jaako1986/rovervivencia/blob/maqueta-a5/maqueta-a5/manual-refugio.html
+
+Para imprimir: abrir la vista renderizada, usar imprimir/guardar como PDF y elegir papel A5.
