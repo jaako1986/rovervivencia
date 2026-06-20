@@ -6,6 +6,7 @@
   <title>Rovervivencia - Refugio y campamento A5</title>
   <style>
     @page { size: A5 portrait; margin: 12mm 10mm 14mm; }
+    @page landscapeSheet { size: A5 landscape; margin: 10mm 12mm 12mm; }
     :root { --ink:#1f2a24; --muted:#65706a; --line:#c9d2ca; --paper:#fffdf8; --panel:#f4f0e6; --accent:#2f6f4e; --accent-dark:#214b37; --warning:#8a4b22; }
     * { box-sizing: border-box; }
     html, body { margin:0; padding:0; background:var(--paper); color:var(--ink); font-family: Georgia, "Times New Roman", serif; font-size:10.5pt; line-height:1.48; }
@@ -31,8 +32,19 @@
     .sheet-subtitle { color:var(--muted); font-family:Arial, sans-serif; font-size:8.6pt; margin-top:1mm; }
     .sheet img { display:block; width:100%; max-height:156mm; object-fit:contain; margin:auto 0; border:1px solid #d8ded7; background:white; }
     .sheet-foot { color:var(--muted); font-family:Arial, sans-serif; font-size:8pt; margin-top:3mm; border-top:1px solid var(--line); padding-top:2mm; }
+    .sheet.landscape { page: landscapeSheet; min-height:123mm; }
+    .sheet.landscape .sheet-head { margin-bottom:2mm; }
+    .sheet.landscape .sheet-title { font-size:12.5pt; }
+    .sheet.landscape .sheet-subtitle, .sheet.landscape .sheet-foot { font-size:7.8pt; }
+    .sheet.landscape img { max-height:96mm; }
     .footer-note { color:var(--muted); font-family:Arial, sans-serif; font-size:8pt; margin-top:8mm; }
-    @media screen { body { background:#d9ddd7; padding:18px; } .book { padding:12mm 10mm 14mm; box-shadow:0 8px 32px rgba(0,0,0,.18); } .cover, .chapter, .sheet { border-bottom:1px dashed #b9c1ba; margin-bottom:14mm; padding-bottom:8mm; } }
+    @media screen {
+      body { background:#d9ddd7; padding:18px; }
+      .book { padding:0; background:transparent; box-shadow:none; }
+      .cover, .chapter, .sheet { width:148mm; min-height:210mm; margin:0 auto 14mm; padding:12mm 10mm 14mm; background:var(--paper); border-bottom:1px dashed #b9c1ba; box-shadow:0 8px 32px rgba(0,0,0,.18); }
+      .sheet.landscape { width:210mm; min-height:148mm; padding:10mm 12mm 12mm; }
+      .sheet.landscape img { max-height:96mm; }
+    }
     @media print { .book { max-width:none; padding:0; box-shadow:none; } a { color:inherit; text-decoration:none; } }
   </style>
 </head>
@@ -75,10 +87,10 @@
         <div><strong>Low Profile:</strong> maxima prioridad al viento y lluvia horizontal.</div>
         <div><strong>Wing / Comedor:</strong> cobertura amplia para grupo, cocina o area comun.</div>
       </div>
-      <div class="note"><strong>Decision de maqueta:</strong> las imagenes de tarp contienen explicacion propia. Por eso se presentan como laminas A5 completas, con una nota de uso debajo.</div>
+      <div class="note"><strong>Decision de maqueta:</strong> las fichas apaisadas pasan a A5 horizontal para aprovechar la proporcion real de la imagen.</div>
     </section>
 
-    <section class="sheet">
+    <section class="sheet landscape">
       <div class="sheet-head">
         <p class="kicker">Ficha 6.1</p>
         <h2 class="sheet-title">Comparativa de tarps</h2>
@@ -88,7 +100,7 @@
       <p class="sheet-foot">Lectura Rover: primero se define el problema: viento, lluvia, grupo, descanso o emergencia.</p>
     </section>
 
-    <section class="sheet">
+    <section class="sheet landscape">
       <div class="sheet-head">
         <p class="kicker">Ficha tecnica 1</p>
         <h2 class="sheet-title">Lean-To</h2>
@@ -98,7 +110,7 @@
       <p class="sheet-foot">Lectura Rover: rapido y abierto, pero limitado si el viento cambia.</p>
     </section>
 
-    <section class="sheet">
+    <section class="sheet landscape">
       <div class="sheet-head">
         <p class="kicker">Ficha tecnica 2</p>
         <h2 class="sheet-title">A-Frame</h2>
