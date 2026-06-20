@@ -5,29 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rovervivencia - Capitulo 3 A5</title>
   <style>
-    @page { size: A5 portrait; margin: 16mm 13mm 18mm; }
+    @page { size: A5 portrait; margin: 12mm 10mm 14mm; }
     :root { --ink:#1f2a24; --muted:#65706a; --line:#c9d2ca; --paper:#fffdf8; --panel:#f4f0e6; --accent:#2f6f4e; --accent-dark:#214b37; --warning:#8a4b22; }
     * { box-sizing: border-box; }
     html, body { margin:0; padding:0; background:var(--paper); color:var(--ink); font-family: Georgia, "Times New Roman", serif; font-size:10.5pt; line-height:1.48; }
     .book { max-width:148mm; margin:0 auto; background:var(--paper); }
-    .cover { min-height:190mm; display:flex; flex-direction:column; justify-content:center; page-break-after:always; border-bottom:1px solid var(--line); }
+    .cover, .chapter, .sheet { min-height:184mm; page-break-after:always; }
+    .cover { display:flex; flex-direction:column; justify-content:center; border-bottom:1px solid var(--line); }
     .kicker { color:var(--accent); font-family:Arial, sans-serif; font-size:8pt; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
     h1, h2, h3 { color:var(--accent-dark); font-family:Arial, sans-serif; line-height:1.12; page-break-after:avoid; }
     h1 { margin:0 0 7mm; font-size:27pt; }
-    h2 { margin:12mm 0 4mm; font-size:17pt; border-bottom:1px solid var(--line); padding-bottom:2mm; }
-    h3 { margin:7mm 0 2mm; font-size:12pt; }
+    h2 { margin:10mm 0 4mm; font-size:16pt; border-bottom:1px solid var(--line); padding-bottom:2mm; }
+    h3 { margin:0 0 2mm; font-size:12pt; }
     p { margin:0 0 3.2mm; }
-    .chapter { page-break-before:always; }
+    ul { margin:0 0 4mm 5mm; padding:0; }
+    li { margin-bottom:1.5mm; }
     .lede { color:#33443a; font-size:11.5pt; line-height:1.5; border-left:3px solid var(--accent); padding-left:4mm; margin:0 0 7mm; }
-    .figure-card { page-break-inside:avoid; margin:7mm 0 9mm; padding:4mm; background:#f8f6ef; border:1px solid var(--line); }
-    .figure-card h3 { margin-top:0; }
-    .figure-card img { display:block; width:100%; max-height:92mm; object-fit:contain; margin:3mm 0; border:1px solid #d8ded7; background:white; }
-    .caption { color:var(--muted); font-family:Arial, sans-serif; font-size:8.5pt; margin-bottom:3mm; }
-    .ficha-puntos { display:grid; grid-template-columns:1fr; gap:1.5mm; margin-top:3mm; font-family:Arial, sans-serif; font-size:9.2pt; }
-    .ficha-puntos div { padding:2mm 2.5mm; background:white; border-left:2px solid var(--accent); }
-    .warning { margin:5mm 0; padding:4mm; background:var(--panel); border-left:3px solid var(--warning); font-family:Arial, sans-serif; font-size:9.2pt; }
+    .note, .warning { margin:5mm 0; padding:4mm; background:var(--panel); border-left:3px solid var(--accent); font-family:Arial, sans-serif; font-size:9.2pt; }
+    .warning { border-left-color:var(--warning); }
+    .sheet { display:flex; flex-direction:column; justify-content:flex-start; }
+    .sheet-head { margin-bottom:3mm; }
+    .sheet-title { margin:0; font-size:14pt; }
+    .sheet-subtitle { color:var(--muted); font-family:Arial, sans-serif; font-size:8.6pt; margin-top:1mm; }
+    .sheet img { display:block; width:100%; max-height:158mm; object-fit:contain; margin:auto 0; border:1px solid #d8ded7; background:white; }
+    .sheet-foot { color:var(--muted); font-family:Arial, sans-serif; font-size:8pt; margin-top:3mm; border-top:1px solid var(--line); padding-top:2mm; }
     .footer-note { color:var(--muted); font-family:Arial, sans-serif; font-size:8pt; margin-top:8mm; }
-    @media screen { body { background:#d9ddd7; padding:18px; } .book { min-height:210mm; padding:16mm 13mm 18mm; box-shadow:0 8px 32px rgba(0,0,0,.18); } }
+    @media screen { body { background:#d9ddd7; padding:18px; } .book { padding:12mm 10mm 14mm; box-shadow:0 8px 32px rgba(0,0,0,.18); } .cover, .chapter, .sheet { border-bottom:1px dashed #b9c1ba; margin-bottom:14mm; padding-bottom:8mm; } }
     @media print { .book { max-width:none; padding:0; box-shadow:none; } a { color:inherit; text-decoration:none; } }
   </style>
 </head>
@@ -37,88 +40,77 @@
       <p class="kicker">Manual scout de supervivencia</p>
       <h1>Rovervivencia</h1>
       <p class="lede">Supervivencia, autonomia y criterio para actividades Rover en ambientes patagonicos.</p>
-      <p class="footer-note">Maqueta A5 de prueba. Rama: maqueta-a5.</p>
+      <p class="footer-note">Maqueta A5 de prueba. Capitulo 3: equipo personal.</p>
     </section>
 
     <section class="chapter">
       <p class="kicker">Capitulo 3</p>
       <h1>Equipo personal</h1>
-      <p class="lede">El mejor equipo no es necesariamente el mas caro ni el mas moderno. Es aquel que cumple su funcion, que conocemos bien y que llevamos con criterio.</p>
+      <p class="lede">El equipo no reemplaza al criterio. Sirve cuando esta bien elegido, bien distribuido y la persona sabe usarlo.</p>
 
-      <h2>Mochila</h2>
-      <p>La mochila es el sistema que permite llevar lo necesario de manera ordenada, comoda y segura. Una mochila bien elegida y correctamente cargada reduce el cansancio, mejora la movilidad y permite acceder rapido a elementos importantes.</p>
-      <p>Los elementos mas pesados, como agua o comida, conviene ubicarlos cerca de la espalda y aproximadamente a la altura de los hombros. Los objetos livianos pueden ir abajo y los de uso frecuente deben quedar accesibles.</p>
+      <h2>Como leer este capitulo</h2>
+      <p>Este capitulo funciona en dos ritmos. Primero aparece el criterio general: que problema resuelve cada parte del equipo y que errores conviene evitar. Luego aparecen laminas A5 completas. Esas laminas ya contienen texto interno, por eso se muestran casi a pagina completa.</p>
 
-      <figure class="figure-card">
-        <h3>Ficha visual: distribucion de carga</h3>
-        <img alt="Distribucion recomendada de carga" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/distribuci%C3%B3n%20recomendada%20de%20carga.png">
-        <figcaption class="caption">La carga debe mantener estable el centro de gravedad y permitir acceso rapido a abrigo, agua, linterna o botiquin.</figcaption>
-        <div class="ficha-puntos">
-          <div>Peso principal cerca de la espalda.</div>
-          <div>Elementos de emergencia en zonas accesibles.</div>
-          <div>Proteccion contra humedad con funda o bolsas internas.</div>
-        </div>
-      </figure>
+      <h2>Criterios principales</h2>
+      <ul>
+        <li>La mochila debe ordenar el peso y permitir acceso rapido a elementos importantes.</li>
+        <li>La ropa por capas regula humedad, abrigo y proteccion climatica.</li>
+        <li>Las herramientas esenciales cubren funciones, no marcas.</li>
+        <li>En Patagonia se prioriza viento, hidratacion, abrigo extra y señalizacion.</li>
+        <li>Cada objeto debe justificar su peso.</li>
+      </ul>
 
-      <h2>Vestimenta por capas</h2>
-      <p>El sistema de capas permite regular la temperatura corporal durante la marcha, el descanso y los cambios bruscos de clima. No se trata solo de abrigarse, sino de controlar humedad, conservar calor y bloquear viento o lluvia.</p>
+      <div class="note"><strong>Decision de maqueta:</strong> las imagenes de este capitulo se tratan como fichas terminadas. El texto del libro acompaña, pero no duplica todo lo que ya esta dentro de la imagen.</div>
+    </section>
 
-      <figure class="figure-card">
-        <h3>Ficha visual: sistema de capas</h3>
-        <img alt="Sistema de capas" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/sistema%20de%20capas.png">
-        <figcaption class="caption">Primera capa para humedad, segunda para abrigo, tercera para clima externo.</figcaption>
-        <div class="ficha-puntos">
-          <div>Evitar algodon en actividades frias o humedas.</div>
-          <div>Regular capas antes de transpirar demasiado.</div>
-          <div>En Patagonia, la capa contra viento es prioritaria.</div>
-        </div>
-      </figure>
-
-      <h2>Las 10 herramientas esenciales</h2>
-      <p>Ciertos elementos aparecen una y otra vez porque permiten resolver la mayoria de los problemas habituales en actividades al aire libre. Lo importante no es la marca, sino la funcion cubierta y la capacidad de usarla bien.</p>
-
-      <figure class="figure-card">
-        <h3>Ficha visual: herramientas esenciales</h3>
-        <img alt="Herramientas esenciales" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/herramientas%20esenciales.png">
-        <figcaption class="caption">Un equipo minimo confiable ayuda a cortar, orientarse, iluminar, hidratarse, comunicarse y responder ante imprevistos.</figcaption>
-        <div class="ficha-puntos">
-          <div>Elemento de corte, ignicion, linterna y recipiente para agua.</div>
-          <div>Cordin, orientacion, botiquin y proteccion climatica.</div>
-          <div>Silbato y medio de comunicacion para emergencias.</div>
-        </div>
-      </figure>
-
-      <h2>Equipo recomendado para Patagonia</h2>
-      <p>La Patagonia exige prepararse para viento, baja humedad, radiacion solar intensa y cambios bruscos de clima. La estrategia no es cargar mas peso, sino anticipar los riesgos mas probables del entorno.</p>
-
-      <figure class="figure-card">
-        <h3>Ficha visual: equipo para Patagonia</h3>
-        <img alt="Equipo para Patagonia" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/equipo%20para%20patagonia.png">
-        <figcaption class="caption">El equipo regional prioriza viento, abrigo adicional, hidratacion, proteccion solar y elementos de emergencia.</figcaption>
-        <div class="ficha-puntos">
-          <div>Rompevientos y capa impermeable siempre a mano.</div>
-          <div>Reserva de agua y proteccion solar aun en dias frescos.</div>
-          <div>Manta termica, luz de respaldo y señalizacion simple.</div>
-        </div>
-      </figure>
-
-      <h2>Que NO llevar</h2>
-      <p>Una mochila crece rapido cuando falta experiencia. Cada objeto ocupa espacio, agrega peso y requiere atencion. Antes de guardar algo, conviene preguntarse que funcion cumple y que problema ayuda a resolver.</p>
-
-      <figure class="figure-card">
-        <h3>Ficha visual: evitar sobrecarga</h3>
-        <img alt="Que no llevar" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/que%20no%20llevar.png">
-        <figcaption class="caption">Cada objeto debe justificar su peso.</figcaption>
-        <div class="ficha-puntos">
-          <div>Evitar objetos sin funcion clara.</div>
-          <div>No duplicar herramientas salvo necesidad real.</div>
-          <div>No cargar equipo que no sabemos usar.</div>
-        </div>
-      </figure>
-
-      <div class="warning">
-        <strong>Nota Rover:</strong> el equipo ayuda, pero no reemplaza conocimiento, practica y criterio.
+    <section class="sheet">
+      <div class="sheet-head">
+        <p class="kicker">Ficha 3.1</p>
+        <h2 class="sheet-title">Distribucion recomendada de carga</h2>
+        <p class="sheet-subtitle">Usar al preparar la mochila antes de una salida.</p>
       </div>
+      <img alt="Distribucion recomendada de carga" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/distribuci%C3%B3n%20recomendada%20de%20carga.png">
+      <p class="sheet-foot">Lectura Rover: peso cerca de la espalda, equipo frecuente accesible y proteccion contra humedad.</p>
+    </section>
+
+    <section class="sheet">
+      <div class="sheet-head">
+        <p class="kicker">Ficha 3.2</p>
+        <h2 class="sheet-title">Sistema de capas</h2>
+        <p class="sheet-subtitle">Usar para explicar abrigo, transpiracion y proteccion contra viento.</p>
+      </div>
+      <img alt="Sistema de capas" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/sistema%20de%20capas.png">
+      <p class="sheet-foot">Lectura Rover: no se trata de llevar mas ropa, sino de poder regularla durante la actividad.</p>
+    </section>
+
+    <section class="sheet">
+      <div class="sheet-head">
+        <p class="kicker">Ficha 3.3</p>
+        <h2 class="sheet-title">Herramientas esenciales</h2>
+        <p class="sheet-subtitle">Usar como lista base de funciones cubiertas.</p>
+      </div>
+      <img alt="Herramientas esenciales" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/herramientas%20esenciales.png">
+      <p class="sheet-foot">Lectura Rover: una herramienta desconocida no aumenta la seguridad; primero se aprende, despues se depende de ella.</p>
+    </section>
+
+    <section class="sheet">
+      <div class="sheet-head">
+        <p class="kicker">Ficha 3.4</p>
+        <h2 class="sheet-title">Equipo para Patagonia</h2>
+        <p class="sheet-subtitle">Usar para adaptar el equipo al viento, frio, sol y distancias.</p>
+      </div>
+      <img alt="Equipo para Patagonia" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/equipo%20para%20patagonia.png">
+      <p class="sheet-foot">Lectura Rover: el viento puede convertir una salida simple en una situacion exigente.</p>
+    </section>
+
+    <section class="sheet">
+      <div class="sheet-head">
+        <p class="kicker">Ficha 3.5</p>
+        <h2 class="sheet-title">Que no llevar</h2>
+        <p class="sheet-subtitle">Usar al revisar peso, redundancias y objetos sin funcion clara.</p>
+      </div>
+      <img alt="Que no llevar" src="https://raw.githubusercontent.com/jaako1986/rovervivencia/imagenes/que%20no%20llevar.png">
+      <p class="sheet-foot">Lectura Rover: cada objeto debe justificar su peso.</p>
     </section>
   </main>
 </body>
